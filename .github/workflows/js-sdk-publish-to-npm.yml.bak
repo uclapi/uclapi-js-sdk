@@ -1,0 +1,29 @@
+name: js-sdk-publish-to-npm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+        registry-url: 'https://registry.npmjs.org'
+    - name: Install packages for generation
+      run: npm install -g @openapitools/openapi-generator-cli
+    - name: Install packages for the folder
+      run: npm install
+    - name: Build the packages for the folder
+      run: npm run build
+    - name: Run test on the packages
+      run: npm run test
+    - name: Publish package to npm registry
+      run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
