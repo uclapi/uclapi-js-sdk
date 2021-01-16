@@ -17,7 +17,7 @@ import Person from './Person';
 /**
  * The InlineResponse20010 model module.
  * @module model/InlineResponse20010
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse20010 {
     /**

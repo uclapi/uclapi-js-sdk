@@ -17,7 +17,7 @@ import SurveyLocation from './SurveyLocation';
 /**
  * The Survey model module.
  * @module model/Survey
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Survey {
     /**

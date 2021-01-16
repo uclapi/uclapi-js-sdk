@@ -25,7 +25,7 @@ import Svg from '../model/Svg';
 /**
 * Workspaces service.
 * @module api/WorkspacesApi
-* @version 1.0.7
+* @version 1.1.0
 */
 export default class WorkspacesApi {
 

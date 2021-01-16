@@ -17,7 +17,7 @@ import SeatImage from './SeatImage';
 /**
  * The SvgGImage model module.
  * @module model/SvgGImage
- * @version 1.0.7
+ * @version 1.1.0
  */
 class SvgGImage {
     /**

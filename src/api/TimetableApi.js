@@ -22,7 +22,7 @@ import InlineResponse2003 from '../model/InlineResponse2003';
 /**
 * Timetable service.
 * @module api/TimetableApi
-* @version 1.0.7
+* @version 1.1.0
 */
 export default class TimetableApi {
 

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Booking model module.
  * @module model/Booking
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Booking {
     /**

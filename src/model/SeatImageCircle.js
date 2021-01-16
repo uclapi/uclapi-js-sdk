@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The SeatImageCircle model module.
  * @module model/SeatImageCircle
- * @version 1.0.7
+ * @version 1.1.0
  */
 class SeatImageCircle {
     /**

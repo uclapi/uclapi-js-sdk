@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Department model module.
  * @module model/Department
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Department {
     /**

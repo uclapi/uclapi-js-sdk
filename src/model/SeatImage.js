@@ -17,7 +17,7 @@ import SeatImageCircle from './SeatImageCircle';
 /**
  * The SeatImage model module.
  * @module model/SeatImage
- * @version 1.0.7
+ * @version 1.1.0
  */
 class SeatImage {
     /**

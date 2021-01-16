@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The SurveyLocationCoordinates model module.
  * @module model/SurveyLocationCoordinates
- * @version 1.0.7
+ * @version 1.1.0
  */
 class SurveyLocationCoordinates {
     /**

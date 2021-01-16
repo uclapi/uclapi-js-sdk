@@ -17,7 +17,7 @@ import SummerSchoolSessions from './SummerSchoolSessions';
 /**
  * The SummerSchool model module.
  * @module model/SummerSchool
- * @version 1.0.7
+ * @version 1.1.0
  */
 class SummerSchool {
     /**

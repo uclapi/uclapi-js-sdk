@@ -17,7 +17,7 @@ import Timetable from './Timetable';
 /**
  * The InlineResponse200 model module.
  * @module model/InlineResponse200
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse200 {
     /**

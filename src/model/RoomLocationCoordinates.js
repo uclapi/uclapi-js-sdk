@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The RoomLocationCoordinates model module.
  * @module model/RoomLocationCoordinates
- * @version 1.0.7
+ * @version 1.1.0
  */
 class RoomLocationCoordinates {
     /**

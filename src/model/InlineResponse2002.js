@@ -17,7 +17,7 @@ import ModuleDataCoursesModules from './ModuleDataCoursesModules';
 /**
  * The InlineResponse2002 model module.
  * @module model/InlineResponse2002
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse2002 {
     /**

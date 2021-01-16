@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Equipment model module.
  * @module model/Equipment
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Equipment {
     /**

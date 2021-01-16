@@ -19,7 +19,7 @@ import InlineResponse20010 from '../model/InlineResponse20010';
 /**
 * Search service.
 * @module api/SearchApi
-* @version 1.0.7
+* @version 1.1.0
 */
 export default class SearchApi {
 

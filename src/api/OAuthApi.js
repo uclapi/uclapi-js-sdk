@@ -21,7 +21,7 @@ import UserData from '../model/UserData';
 /**
 * OAuth service.
 * @module api/OAuthApi
-* @version 1.0.7
+* @version 1.1.0
 */
 export default class OAuthApi {
 

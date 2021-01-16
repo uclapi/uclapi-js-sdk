@@ -22,7 +22,7 @@ import InlineResponse2009 from '../model/InlineResponse2009';
 /**
 * RoomBookings service.
 * @module api/RoomBookingsApi
-* @version 1.0.7
+* @version 1.1.0
 */
 export default class RoomBookingsApi {
 

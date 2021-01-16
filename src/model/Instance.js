@@ -18,7 +18,7 @@ import Period from './Period';
 /**
  * The Instance model module.
  * @module model/Instance
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Instance {
     /**

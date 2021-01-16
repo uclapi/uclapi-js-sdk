@@ -17,7 +17,7 @@ import Instance from './Instance';
 /**
  * The ModuleDataCoursesModules model module.
  * @module model/ModuleDataCoursesModules
- * @version 1.0.7
+ * @version 1.1.0
  */
 class ModuleDataCoursesModules {
     /**

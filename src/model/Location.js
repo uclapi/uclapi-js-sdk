@@ -17,7 +17,7 @@ import LocationCoordinates from './LocationCoordinates';
 /**
  * The Location model module.
  * @module model/Location
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Location {
     /**

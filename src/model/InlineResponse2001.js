@@ -17,7 +17,7 @@ import Department from './Department';
 /**
  * The InlineResponse2001 model module.
  * @module model/InlineResponse2001
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse2001 {
     /**

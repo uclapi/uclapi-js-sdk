@@ -17,7 +17,7 @@ import InlineResponse20021Data from './InlineResponse20021Data';
 /**
  * The InlineResponse20021 model module.
  * @module model/InlineResponse20021
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse20021 {
     /**

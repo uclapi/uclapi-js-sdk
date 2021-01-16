@@ -18,7 +18,7 @@ import Module from './Module';
 /**
  * The Event model module.
  * @module model/Event
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Event {
     /**

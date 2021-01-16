@@ -17,7 +17,7 @@ import Equipment from './Equipment';
 /**
  * The InlineResponse2008 model module.
  * @module model/InlineResponse2008
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse2008 {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TeachingPeriods model module.
  * @module model/TeachingPeriods
- * @version 1.0.7
+ * @version 1.1.0
  */
 class TeachingPeriods {
     /**

@@ -17,7 +17,7 @@ import RoomLocationCoordinates from './RoomLocationCoordinates';
 /**
  * The RoomLocation model module.
  * @module model/RoomLocation
- * @version 1.0.7
+ * @version 1.1.0
  */
 class RoomLocation {
     /**

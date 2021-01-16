@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DesktopDataLocation model module.
  * @module model/DesktopDataLocation
- * @version 1.0.7
+ * @version 1.1.0
  */
 class DesktopDataLocation {
     /**

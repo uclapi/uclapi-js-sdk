@@ -17,7 +17,7 @@ import SurveyWithMaps from './SurveyWithMaps';
 /**
  * The InlineResponse20016 model module.
  * @module model/InlineResponse20016
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse20016 {
     /**

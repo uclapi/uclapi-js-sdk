@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Sensor model module.
  * @module model/Sensor
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Sensor {
     /**

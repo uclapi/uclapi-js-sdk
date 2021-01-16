@@ -17,7 +17,7 @@ import Room from './Room';
 /**
  * The InlineResponse2009 model module.
  * @module model/InlineResponse2009
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse2009 {
     /**

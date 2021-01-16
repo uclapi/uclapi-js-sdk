@@ -17,7 +17,7 @@ import RoomLocation from './RoomLocation';
 /**
  * The Room model module.
  * @module model/Room
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Room {
     /**

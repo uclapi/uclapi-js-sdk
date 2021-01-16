@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Average model module.
  * @module model/Average
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Average {
     /**

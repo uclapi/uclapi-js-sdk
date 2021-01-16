@@ -17,7 +17,7 @@ import SurveyLocationCoordinates from './SurveyLocationCoordinates';
 /**
  * The SurveyLocation model module.
  * @module model/SurveyLocation
- * @version 1.0.7
+ * @version 1.1.0
  */
 class SurveyLocation {
     /**

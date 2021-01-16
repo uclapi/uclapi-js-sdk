@@ -24,7 +24,7 @@ import InlineResponse20023 from '../model/InlineResponse20023';
 /**
 * Analytics service.
 * @module api/AnalyticsApi
-* @version 1.0.7
+* @version 1.1.0
 */
 export default class AnalyticsApi {
 

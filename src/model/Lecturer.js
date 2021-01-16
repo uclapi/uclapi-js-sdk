@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Lecturer model module.
  * @module model/Lecturer
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Lecturer {
     /**

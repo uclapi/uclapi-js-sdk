@@ -17,7 +17,7 @@ import MapWithSensors from './MapWithSensors';
 /**
  * The InlineResponse20013 model module.
  * @module model/InlineResponse20013
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse20013 {
     /**

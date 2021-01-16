@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The SummerSchoolSessions model module.
  * @module model/SummerSchoolSessions
- * @version 1.0.7
+ * @version 1.1.0
  */
 class SummerSchoolSessions {
     /**

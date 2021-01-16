@@ -17,7 +17,7 @@ import SvgG from './SvgG';
 /**
  * The Svg model module.
  * @module model/Svg
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Svg {
     /**

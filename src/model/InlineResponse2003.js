@@ -17,7 +17,7 @@ import Course from './Course';
 /**
  * The InlineResponse2003 model module.
  * @module model/InlineResponse2003
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse2003 {
     /**

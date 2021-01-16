@@ -17,7 +17,7 @@ import Survey from './Survey';
 /**
  * The InlineResponse20012 model module.
  * @module model/InlineResponse20012
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse20012 {
     /**

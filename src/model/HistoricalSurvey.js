@@ -17,7 +17,7 @@ import Average from './Average';
 /**
  * The HistoricalSurvey model module.
  * @module model/HistoricalSurvey
- * @version 1.0.7
+ * @version 1.1.0
  */
 class HistoricalSurvey {
     /**

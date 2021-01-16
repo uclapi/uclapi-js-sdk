@@ -17,7 +17,7 @@ import DesktopDataLocation from './DesktopDataLocation';
 /**
  * The DesktopData model module.
  * @module model/DesktopData
- * @version 1.0.7
+ * @version 1.1.0
  */
 class DesktopData {
     /**

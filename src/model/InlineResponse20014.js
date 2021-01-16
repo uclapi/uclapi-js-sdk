@@ -17,7 +17,7 @@ import HistoricalSurvey from './HistoricalSurvey';
 /**
  * The InlineResponse20014 model module.
  * @module model/InlineResponse20014
- * @version 1.0.7
+ * @version 1.1.0
  */
 class InlineResponse20014 {
     /**

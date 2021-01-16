@@ -17,7 +17,7 @@ import Sensor from './Sensor';
 /**
  * The MapWithSensors model module.
  * @module model/MapWithSensors
- * @version 1.0.7
+ * @version 1.1.0
  */
 class MapWithSensors {
     /**

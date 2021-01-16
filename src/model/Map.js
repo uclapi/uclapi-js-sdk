@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Map model module.
  * @module model/Map
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Map {
     /**

@@ -19,7 +19,7 @@ import InlineResponse20011 from '../model/InlineResponse20011';
 /**
 * Resources service.
 * @module api/ResourcesApi
-* @version 1.0.7
+* @version 1.1.0
 */
 export default class ResourcesApi {
 

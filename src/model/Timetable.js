@@ -17,7 +17,7 @@ import Event from './Event';
 /**
  * The Timetable model module.
  * @module model/Timetable
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Timetable {
     /**

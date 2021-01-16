@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Course model module.
  * @module model/Course
- * @version 1.0.7
+ * @version 1.1.0
  */
 class Course {
     /**
