@@ -15,8 +15,6 @@ jobs:
       with:
         node-version: '10.x'
         registry-url: 'https://registry.npmjs.org'
-    - name: Install packages for generation
-      run: npm install -g @openapitools/openapi-generator-cli
     - name: Install packages for the folder
       run: npm install
     - name: Build the packages for the folder
