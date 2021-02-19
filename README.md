@@ -95,6 +95,7 @@ Class | Method | HTTP request | Description
 *uclapi.AnalyticsApi* | [**dashboardApiAnalyticsQuotaGet**](docs/AnalyticsApi.md#dashboardApiAnalyticsQuotaGet) | **GET** /dashboard/api/analytics/quota | Gets the remaining daily quota for a given token
 *uclapi.AnalyticsApi* | [**dashboardApiAnalyticsServicesGet**](docs/AnalyticsApi.md#dashboardApiAnalyticsServicesGet) | **GET** /dashboard/api/analytics/services | Gets all services and their popularity
 *uclapi.AnalyticsApi* | [**dashboardApiAnalyticsTotalGet**](docs/AnalyticsApi.md#dashboardApiAnalyticsTotalGet) | **GET** /dashboard/api/analytics/total | Gets the total number of requests made from a given token
+*uclapi.OAuthApi* | [**oauthAuthoriseGet**](docs/OAuthApi.md#oauthAuthoriseGet) | **GET** /oauth/authorise | Authorises a user against the API
 *uclapi.OAuthApi* | [**oauthTokenGet**](docs/OAuthApi.md#oauthTokenGet) | **GET** /oauth/token | A token will be generated which your app can use to get user’s personal data in JSON format from the OAuthSecurity/user/data.
 *uclapi.OAuthApi* | [**oauthUserDataGet**](docs/OAuthApi.md#oauthUserDataGet) | **GET** /oauth/user/data | Returns personal data on a student at UCL.
 *uclapi.OAuthApi* | [**oauthUserStudentnumberGet**](docs/OAuthApi.md#oauthUserStudentnumberGet) | **GET** /oauth/user/studentnumber | You can use the oauth/user/data endpoint to find out whether the user is a student before you call this endpoint. If you call this endpoint and the user is not a student, an error will be returned.
