@@ -1,0 +1,71 @@
+name: "Build and deploy JS SDK"
+
+# Update SDK when a new release is deployed to production on the uclapi repository
+on:
+  repository_dispatch:
+    types: [new-release]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version number'
+        required: true
+        default: '1.0.0'
+      sha:
+        description: 'SHA of latest commit'
+        required: true
+
+jobs:
+  build:
+    name: "Build JavaScript SDK"
+    runs-on: ubuntu-latest
+    env:
+      UCLAPI_VERSION: "${{ github.event.client_payload.version || github.event.inputs.version }}"
+      UCLAPI_SPEC_SHA: "${{ github.event.client_payload.sha || github.event.inputs.sha }}"
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+    - name: Install packages for generation
+      run: npm install -g @openapitools/openapi-generator-cli
+    - name: Update version number
+      run: |
+        sed -i "s/\"projectVersion\":.*/\"projectVersion\": \"$UCLAPI_VERSION\",/" openapitools.json
+    - name: Delete old files
+      run: rm -rf src test docs
+    - name: Fetch OpenAPI spec file
+      run: curl "https://raw.githubusercontent.com/uclapi/uclapi/$UCLAPI_SPEC_SHA/uclapi.openapi.json" -o uclapi.openapi.json
+    - name: Generate SDK source via openapi-generator
+      run: openapi-generator-cli generate
+    - name: Commit changes
+      run: |
+        git config user.name 'Github Actions'
+        git config user.email 'actions@github.com'
+        git add -A
+        git commit -m "version: $UCLAPI_VERSION"
+        git tag -a "$UCLAPI_VERSION" -m "$UCLAPI_VERSION"
+        git push
+        git push origin $UCLAPI_VERSION
+  publish:
+    name: "Publish JavaScript SDK to NPM"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: 'main'
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        registry-url: 'https://registry.npmjs.org'
+    - name: Install SDK dependencies
+      run: npm install
+    - name: Build SDK
+      run: npm run build
+    - name: Test SDK
+      run: npm run test
+    - name: Publish SDK to npm registry
+      run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
