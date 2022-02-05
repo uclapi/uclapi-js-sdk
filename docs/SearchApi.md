@@ -4,7 +4,7 @@ All URIs are relative to *https://uclapi.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**searchPeopleGet**](SearchApi.md#searchPeopleGet) | **GET** /search/people | Returns matching people and information about them. Note that this endpoint only returns a maximum of 20 matches. Following a change to UCL&#39;s systems in 2019, this endpoint only returns staff; students will not be returned through this API.
+[**searchPeopleGet**](SearchApi.md#searchPeopleGet) | **GET** /search/people | Returns matching people and information about them.
 
 
 
@@ -12,7 +12,9 @@ Method | HTTP request | Description
 
 > InlineResponse20010 searchPeopleGet(query)
 
-Returns matching people and information about them. Note that this endpoint only returns a maximum of 20 matches. Following a change to UCL&#39;s systems in 2019, this endpoint only returns staff; students will not be returned through this API.
+Returns matching people and information about them.
+
+Note that this endpoint only returns a maximum of 20 matches.  Following a change to UCL&#39;s systems in 2019, this endpoint only returns staff; students will not be returned through this API.
 
 ### Example
 

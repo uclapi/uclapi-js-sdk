@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**moduleId** | **String** |  | [optional] 
-**name** | **String** |  | [optional] 
+**moduleId** | **String** | Module ID. | [optional] 
+**name** | **String** | Module name. | [optional] 
 **instances** | [**[Instance]**](Instance.md) |  | [optional] 
 
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**lat** | **Number** |  | [optional] 
-**lng** | **Number** |  | [optional] 
+**lat** | **String** | Latitude of location | [optional] 
+**lng** | **String** | Longitude of location | [optional] 
 
 

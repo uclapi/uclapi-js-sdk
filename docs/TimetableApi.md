@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**timetableBymoduleGet**](TimetableApi.md#timetableBymoduleGet) | **GET** /timetable/bymodule | Returns a yearly timetable for the supplied modules.
 [**timetableDataCoursesGet**](TimetableApi.md#timetableDataCoursesGet) | **GET** /timetable/data/courses | Returns a list of every course taught by a given department at UCL.
 [**timetableDataCoursesModulesGet**](TimetableApi.md#timetableDataCoursesModulesGet) | **GET** /timetable/data/courses/modules | Returns a list of every module taught on a given course at UCL.
-[**timetableDataDepartmentsGet**](TimetableApi.md#timetableDataDepartmentsGet) | **GET** /timetable/data/departments | Returns a list of every department at UCL, along with its internal name. This can be used with the /data/modules endpoint to request information on all modules for a department.
+[**timetableDataDepartmentsGet**](TimetableApi.md#timetableDataDepartmentsGet) | **GET** /timetable/data/departments | Returns a list of every department at UCL, along with its internal name.
 [**timetableDataModulesGet**](TimetableApi.md#timetableDataModulesGet) | **GET** /timetable/data/modules | Returns a list of every module taught by a given department at UCL.
 [**timetablePersonalGet**](TimetableApi.md#timetablePersonalGet) | **GET** /timetable/personal | Returns the personal timetable of the user.
 
@@ -205,7 +205,9 @@ Name | Type | Description  | Notes
 
 > InlineResponse2001 timetableDataDepartmentsGet()
 
-Returns a list of every department at UCL, along with its internal name. This can be used with the /data/modules endpoint to request information on all modules for a department.
+Returns a list of every department at UCL, along with its internal name.
+
+This can be used with the /data/modules endpoint to request information on all modules for a department.
 
 ### Example
 
@@ -322,7 +324,7 @@ OAuthToken.apiKey = 'YOUR API KEY';
 //OAuthToken.apiKeyPrefix = 'Token';
 
 let apiInstance = new uclapi.TimetableApi();
-let clientSecret = "clientSecret_example"; // String | Client secret of the authenticating app
+let clientSecret = "clientSecret_example"; // String | Client secret of the authenticating app.
 let opts = {
   '_date': "_date_example" // String | A date to filter entries by
 };
@@ -340,7 +342,7 @@ apiInstance.timetablePersonalGet(clientSecret, opts, (error, data, response) => 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **clientSecret** | **String**| Client secret of the authenticating app | 
+ **clientSecret** | **String**| Client secret of the authenticating app. | 
  **_date** | **String**| A date to filter entries by | [optional] 
 
 ### Return type

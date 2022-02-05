@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**department** | **String** |  | [optional] 
+**service** | **String** |  | [optional] 
 **count** | **Number** |  | [optional] 
 
 

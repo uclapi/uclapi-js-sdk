@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ok** | **Boolean** |  | [optional] 
-**surveys** | [**[HistoricalSurvey]**](HistoricalSurvey.md) |  | [optional] 
+**surveys** | [**[SensorAverageSurvey]**](SensorAverageSurvey.md) |  | [optional] 
 
 

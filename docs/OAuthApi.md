@@ -25,7 +25,7 @@ This endpoint should be used to authorise a user against the API.  It will perfo
 import uclapi from '@uclapi/sdk';
 
 let apiInstance = new uclapi.OAuthApi();
-let clientId = 1; // String | Client ID of the authenticating app.
+let clientId = 9020633324528794.9923205739531139; // String | Client ID of the authenticating app.
 let state = jAifrW3; // String | OAuth (random) state.
 apiInstance.oauthAuthoriseGet(clientId, state, (error, data, response) => {
   if (error) {
@@ -76,8 +76,8 @@ let OAuthSecurity = defaultClient.authentications['OAuthSecurity'];
 OAuthSecurity.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new uclapi.OAuthApi();
-let clientSecret = "clientSecret_example"; // String | Client secret of the authenticating app
-let clientId = "clientId_example"; // String | Client ID of the authenticating app.
+let clientSecret = "clientSecret_example"; // String | Client secret of the authenticating app.
+let clientId = 9020633324528794.9923205739531139; // String | Client ID of the authenticating app.
 let code = "code_example"; // String | Secret code obtained from the authorise endpoint.
 apiInstance.oauthTokenGet(clientSecret, clientId, code, (error, data, response) => {
   if (error) {
@@ -93,7 +93,7 @@ apiInstance.oauthTokenGet(clientSecret, clientId, code, (error, data, response) 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **clientSecret** | **String**| Client secret of the authenticating app | 
+ **clientSecret** | **String**| Client secret of the authenticating app. | 
  **clientId** | **String**| Client ID of the authenticating app. | 
  **code** | **String**| Secret code obtained from the authorise endpoint. | 
 
@@ -132,7 +132,7 @@ OAuthToken.apiKey = 'YOUR API KEY';
 //OAuthToken.apiKeyPrefix = 'Token';
 
 let apiInstance = new uclapi.OAuthApi();
-let clientSecret = "clientSecret_example"; // String | Client secret of the authenticating app
+let clientSecret = "clientSecret_example"; // String | Client secret of the authenticating app.
 apiInstance.oauthUserDataGet(clientSecret, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -147,7 +147,7 @@ apiInstance.oauthUserDataGet(clientSecret, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **clientSecret** | **String**| Client secret of the authenticating app | 
+ **clientSecret** | **String**| Client secret of the authenticating app. | 
 
 ### Return type
 
@@ -169,6 +169,8 @@ Name | Type | Description  | Notes
 
 You can use the oauth/user/data endpoint to find out whether the user is a student before you call this endpoint. If you call this endpoint and the user is not a student, an error will be returned.
 
+Please note: to use this endpoint you must have ticked the Student Number scope for your application in the Dashboard. This piece of information has been separated from the others because a student number can in some cases be considered confidential. This is because any data exported directly from Portico, SITS (E:Vision) or CMIS is usually grouped by Student Number. One example is that in some cases departments choose to release spreadsheets of examination results where each student is identified by their student number, and not their name, to provide a degree of anonymity in what is otherwise an open data set. You should consider carefully whether you actually need a student number to track students when other unique identifiers are available, such as their username-based email address and UPI. If you request a student number and it is not required for your application, your users may choose not to provide this information to you, and therefore deny your application permission to access their details.
+
 ### Example
 
 ```javascript
@@ -184,7 +186,7 @@ OAuthToken.apiKey = 'YOUR API KEY';
 //OAuthToken.apiKeyPrefix = 'Token';
 
 let apiInstance = new uclapi.OAuthApi();
-let clientSecret = "clientSecret_example"; // String | Client secret of the authenticating app
+let clientSecret = "clientSecret_example"; // String | Client secret of the authenticating app.
 apiInstance.oauthUserStudentnumberGet(clientSecret, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -199,7 +201,7 @@ apiInstance.oauthUserStudentnumberGet(clientSecret, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **clientSecret** | **String**| Client secret of the authenticating app | 
+ **clientSecret** | **String**| Client secret of the authenticating app. | 
 
 ### Return type
 

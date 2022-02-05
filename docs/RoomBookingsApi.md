@@ -4,10 +4,10 @@ All URIs are relative to *https://uclapi.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**roombookingsBookingsGet**](RoomBookingsApi.md#roombookingsBookingsGet) | **GET** /roombookings/bookings | Returns the results to a bookings or space availability query. It returns a paginated list of bookings. Note that this endpoint only returns publicly displayed bookings. Departmental bookings are not included.
-[**roombookingsEquipmentGet**](RoomBookingsApi.md#roombookingsEquipmentGet) | **GET** /roombookings/equipment | Returns any equipment/feature information about a specific room. So, for example whether there is a Whiteboard or a DVD Player in the room. A full example can be seen here.
+[**roombookingsBookingsGet**](RoomBookingsApi.md#roombookingsBookingsGet) | **GET** /roombookings/bookings | Returns the results to a bookings or space availability query. It returns a paginated list of bookings.
+[**roombookingsEquipmentGet**](RoomBookingsApi.md#roombookingsEquipmentGet) | **GET** /roombookings/equipment | Returns any equipment/feature information about a specific room.
 [**roombookingsFreeroomsGet**](RoomBookingsApi.md#roombookingsFreeroomsGet) | **GET** /roombookings/freerooms | Given a start time and an end time, this endpoint returns all rooms which are free in that time range.
-[**roombookingsRoomsGet**](RoomBookingsApi.md#roombookingsRoomsGet) | **GET** /roombookings/rooms | Returns rooms and information about them. If you don’t specify any query parameters besides the token, all rooms will be returned.
+[**roombookingsRoomsGet**](RoomBookingsApi.md#roombookingsRoomsGet) | **GET** /roombookings/rooms | Returns rooms and information about them.
 
 
 
@@ -15,7 +15,9 @@ Method | HTTP request | Description
 
 > InlineResponse2007 roombookingsBookingsGet(opts)
 
-Returns the results to a bookings or space availability query. It returns a paginated list of bookings. Note that this endpoint only returns publicly displayed bookings. Departmental bookings are not included.
+Returns the results to a bookings or space availability query. It returns a paginated list of bookings.
+
+Note: This endpoint only returns publicly bookable rooms. Departmentally bookable rooms are not included.
 
 ### Example
 
@@ -85,7 +87,9 @@ Name | Type | Description  | Notes
 
 > InlineResponse2008 roombookingsEquipmentGet(opts)
 
-Returns any equipment/feature information about a specific room. So, for example whether there is a Whiteboard or a DVD Player in the room. A full example can be seen here.
+Returns any equipment/feature information about a specific room.
+
+So, for example whether there is a Whiteboard or a DVD Player in the room. A full example can be seen here.
 
 ### Example
 
@@ -143,6 +147,8 @@ Name | Type | Description  | Notes
 
 Given a start time and an end time, this endpoint returns all rooms which are free in that time range.
 
+Note: This endpoint only returns publicly bookable rooms. Departmentally bookable rooms are not included.
+
 ### Example
 
 ```javascript
@@ -197,7 +203,9 @@ Name | Type | Description  | Notes
 
 > InlineResponse2006 roombookingsRoomsGet(opts)
 
-Returns rooms and information about them. If you don’t specify any query parameters besides the token, all rooms will be returned.
+Returns rooms and information about them.
+
+If you don’t specify any query parameters besides the token, all rooms will be returned.  Note: This endpoint only returns publicly bookable rooms. Departmentally bookable rooms are not included. In the response, the room field contains a list of rooms that match your query. If no filters are applied, all rooms will be returned.
 
 ### Example
 
@@ -219,7 +227,7 @@ let opts = {
   'roomid': "roomid_example", // String | The room ID (not to be confused with the roomname).
   'siteid': "siteid_example", // String | Every room is inside a site (building). All sites have IDs.
   'sitename': "sitename_example", // String | Every site (building) has a name. In some cases this is contained in the roomname as well.
-  'classification': "classification_example", // String | The room type ID
+  'classification': "classification_example", // String | The room type ID.
   'capacity': "capacity_example" // String | Every room has a set capacity of how many people can fit inside it. When supplied, all rooms with the given capacity or greater will be returned.
 };
 apiInstance.roombookingsRoomsGet(opts, (error, data, response) => {
@@ -240,7 +248,7 @@ Name | Type | Description  | Notes
  **roomid** | **String**| The room ID (not to be confused with the roomname). | [optional] 
  **siteid** | **String**| Every room is inside a site (building). All sites have IDs. | [optional] 
  **sitename** | **String**| Every site (building) has a name. In some cases this is contained in the roomname as well. | [optional] 
- **classification** | **String**| The room type ID | [optional] 
+ **classification** | **String**| The room type ID. | [optional] 
  **capacity** | **String**| Every room has a set capacity of how many people can fit inside it. When supplied, all rooms with the given capacity or greater will be returned. | [optional] 
 
 ### Return type

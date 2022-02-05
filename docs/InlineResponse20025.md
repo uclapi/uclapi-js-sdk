@@ -1,10 +1,10 @@
-# uclapi.RoomLocationCoordinates
+# uclapi.InlineResponse20025
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**lat** | **Number** |  | [optional] 
-**lng** | **Number** |  | [optional] 
+**ok** | **Boolean** |  | [optional] 
+**users** | **Number** |  | [optional] 
 
 

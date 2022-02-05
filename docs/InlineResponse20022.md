@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ok** | **Boolean** |  | [optional] 
-**users** | **Number** |  | [optional] 
+**remaining** | **Number** |  | [optional] 
 
 

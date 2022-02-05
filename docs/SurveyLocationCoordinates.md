@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**lat** | **String** |  | [optional] 
-**lng** | **String** |  | [optional] 
+**lat** | **String** | Latitude of the survey location. | [optional] 
+**lng** | **String** | Longitude of the survey location. | [optional] 
 
 

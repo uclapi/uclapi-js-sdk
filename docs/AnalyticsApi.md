@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 ## dashboardApiAnalyticsMethodsGet
 
-> InlineResponse20021 dashboardApiAnalyticsMethodsGet(opts)
+> InlineResponse20024 dashboardApiAnalyticsMethodsGet(opts)
 
 Gets all methods for a given service and their popularity
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20021**](InlineResponse20021.md)
+[**InlineResponse20024**](InlineResponse20024.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ No authorization required
 
 ## dashboardApiAnalyticsOauthTotalByDeptGet
 
-> InlineResponse20023 dashboardApiAnalyticsOauthTotalByDeptGet()
+> InlineResponse20026 dashboardApiAnalyticsOauthTotalByDeptGet()
 
 Gets the total number of users for a given app token, by department
 
@@ -94,7 +94,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20023**](InlineResponse20023.md)
+[**InlineResponse20026**](InlineResponse20026.md)
 
 ### Authorization
 
@@ -108,7 +108,7 @@ This endpoint does not need any parameter.
 
 ## dashboardApiAnalyticsOauthTotalGet
 
-> InlineResponse20022 dashboardApiAnalyticsOauthTotalGet(opts)
+> InlineResponse20025 dashboardApiAnalyticsOauthTotalGet(opts)
 
 Gets the total number of users for a given app token
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20022**](InlineResponse20022.md)
+[**InlineResponse20025**](InlineResponse20025.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ## dashboardApiAnalyticsQuotaGet
 
-> InlineResponse20019 dashboardApiAnalyticsQuotaGet()
+> InlineResponse20022 dashboardApiAnalyticsQuotaGet()
 
 Gets the remaining daily quota for a given token
 
@@ -198,7 +198,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20019**](InlineResponse20019.md)
+[**InlineResponse20022**](InlineResponse20022.md)
 
 ### Authorization
 
@@ -212,7 +212,7 @@ This endpoint does not need any parameter.
 
 ## dashboardApiAnalyticsServicesGet
 
-> InlineResponse20020 dashboardApiAnalyticsServicesGet()
+> InlineResponse20023 dashboardApiAnalyticsServicesGet()
 
 Gets all services and their popularity
 
@@ -237,7 +237,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20020**](InlineResponse20020.md)
+[**InlineResponse20023**](InlineResponse20023.md)
 
 ### Authorization
 
@@ -251,7 +251,7 @@ No authorization required
 
 ## dashboardApiAnalyticsTotalGet
 
-> InlineResponse20018 dashboardApiAnalyticsTotalGet()
+> InlineResponse20021 dashboardApiAnalyticsTotalGet()
 
 Gets the total number of requests made from a given token
 
@@ -285,7 +285,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**InlineResponse20021**](InlineResponse20021.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**departmentId** | **String** |  | [optional] 
-**name** | **String** |  | [optional] 
+**departmentId** | **String** | Department code. | [optional] 
+**name** | **String** | Human readable department name. | [optional] 
 
 

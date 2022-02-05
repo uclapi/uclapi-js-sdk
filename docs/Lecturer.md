@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**departmentName** | **String** |  | [optional] 
-**departmentId** | **String** |  | [optional] 
-**email** | **String** |  | [optional] 
+**name** | **String** | Name of lecturer | [optional] 
+**departmentName** | **String** | Human readable department name that owns the module. | [optional] 
+**departmentId** | **String** | Department code that this module comes under. | [optional] 
+**email** | **String** | Email address for lecturer | [optional] 
 
 

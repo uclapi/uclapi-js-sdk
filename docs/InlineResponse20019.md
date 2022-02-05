@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ok** | **Boolean** |  | [optional] 
-**remaining** | **Number** |  | [optional] 
+**data** | [**InlineResponse20019Data**](InlineResponse20019Data.md) |  | [optional] 
 
 

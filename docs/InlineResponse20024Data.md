@@ -1,10 +1,10 @@
-# uclapi.InlineResponse20020Data
+# uclapi.InlineResponse20024Data
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**service** | **String** |  | [optional] 
+**method** | **String** |  | [optional] 
 **count** | **Number** |  | [optional] 
 
 

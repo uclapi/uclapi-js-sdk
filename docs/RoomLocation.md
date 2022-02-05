@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**address** | **[String]** |  | [optional] 
-**coordinates** | [**RoomLocationCoordinates**](RoomLocationCoordinates.md) |  | [optional] 
+**address** | **[String]** | Address represented as an array. | [optional] 
+**coordinates** | [**LocationCoordinates**](LocationCoordinates.md) |  | [optional] 
 
 
