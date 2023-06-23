@@ -47,9 +47,11 @@ jobs:
         git tag -a "$UCLAPI_VERSION" -m "$UCLAPI_VERSION"
         git push
         git push origin $UCLAPI_VERSION
+
   publish:
     name: "Publish JavaScript SDK to NPM"
     runs-on: ubuntu-latest
+    needs: build
 
     steps:
     - uses: actions/checkout@v2
